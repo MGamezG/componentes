@@ -1,1 +1,17 @@
-<p>users works!</p>
+<div class="container mt-5">
+  <div class="row">
+    <div class="col-12 text-center">
+      <div class="btn-group" role="group" aria-label="Basic mixed styles example">
+        <button type="button" class="btn btn-outline-success" routerLinkActive="active"[routerLink]="['new']">Nuevo</button>
+        <button type="button" class="btn btn-outline-warning"routerLinkActive="active" [routerLink]="['edit']">Editar</button>
+        <button type="button" class="btn btn-outline-info"routerLinkActive="active" [routerLink]="['detail']">Detalle</button>
+      </div>
+
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-12">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+</div>

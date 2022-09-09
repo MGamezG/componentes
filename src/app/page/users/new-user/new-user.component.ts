@@ -1,3 +1,4 @@
+import { ActivatedRoute, Params } from '@angular/router';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,7 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NewUserComponent implements OnInit {
 
-  constructor() { }
+  constructor(private activatedRuter:ActivatedRoute) {
+   this.activatedRuter.parent?.params.subscribe(
+      (params:Params)=>{
+        console.log('hija')
+        console.log(params)
+      }
+    )
+   }
 
   ngOnInit(): void {
   }
