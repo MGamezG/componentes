@@ -57,4 +57,37 @@
       <p [appResaltado]="'orange'">hola mundo</p>
     </div>
   </div>
+  <div class="row">
+    <div class="col-6">
+      <div [ngSwitch]="alert2">
+        <div *ngSwitchCase="'success'">success</div>
+        <div *ngSwitchCase="'info'">info</div>
+        <div *ngSwitchCase="'warning'">warning</div>
+        <div *ngSwitchDefault>danger</div>
+      </div>
+      <button class="btn btn-success" (click)="alert2='success'">
+        cambiar
+      </button>
+      <button class="btn btn-info" (click)="alert2='info'">
+        cambiar
+      </button>
+      </div>
+      <div class="col-6" [ngSwitch]="alert2">
+
+        <div *ngSwitchCase="'success'" class="alert alert-success" role="alert">
+          A simple success alert—check it out!
+        </div>
+        <div *ngSwitchCase="'info'"class="alert alert-info" role="alert">
+          A simple info alert—check it out!
+        </div>
+
+        <div *ngSwitchCase="'warning'" class="alert alert-warning" role="alert">
+          A simple warning alert—check it out!
+        </div>
+        <div *ngSwitchDefault class="alert alert-danger" role="alert">
+          A simple danger alert—check it out!
+        </div>
+
+      </div>
+    </div>
 </div>

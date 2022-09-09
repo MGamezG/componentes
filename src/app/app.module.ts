@@ -7,6 +7,9 @@ import { NavbarComponent } from './shared/navbar/navbar.component';
 import { HomeComponent } from './page/home/home.component';
 import { UsersComponent } from './page/users/users.component';
 import { ResaltadoDirective } from './directives/resaltado/resaltado.directive';
+import { NewUserComponent } from './page/users/new-user/new-user.component';
+import { NewEditComponent } from './page/users/new-edit/new-edit.component';
+import { NewDetailComponent } from './page/users/new-detail/new-detail.component';
 
 
 @NgModule({
@@ -16,6 +19,9 @@ import { ResaltadoDirective } from './directives/resaltado/resaltado.directive';
     HomeComponent,
     UsersComponent,
     ResaltadoDirective,
+    NewUserComponent,
+    NewEditComponent,
+    NewDetailComponent,
 
   ],
   imports: [

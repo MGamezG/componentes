@@ -8,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class HomeComponent implements OnInit {
 tamano:number=10
 alert1:string='alert-info'
+alert2:string='warning'
 properties:Object={
   dangers:true
 }
