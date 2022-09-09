@@ -7,6 +7,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 tamano:number=10
+alert1:string='alert-info'
+properties:Object={
+  dangers:true
+}
   constructor() { }
 
   ngOnInit(): void {

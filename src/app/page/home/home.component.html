@@ -1,5 +1,5 @@
 <div class="container">
-  <div class="row">
+  <div class="row mt-5">
     <div class="col-12 main-container">
       <h1>demos: <small>angular</small></h1>
 
@@ -12,6 +12,32 @@
       </button>
       <button class="btn btn-danger" (click)="tamano=tamano-20">
         <i class="bi bi-dash"></i>
+      </button>
+    </div>
+  </div>
+  <div class="row mt-5">
+    <div class="col-12">
+      <p class="p1">como estas?</p>
+    </div>
+  </div>
+  <div class="row mt-5">
+    <div class="col-12">
+      <div [ngClass]="alert1" class="alert" role="alert">
+        <i class="bi bi-check2"></i>
+        A simple success alert—check it out!
+      </div>
+      <button class="btn btn-success" (click)="alert1='alert-success'"><i class="bi bi-check2"></i>ok</button>
+      <button class="btn btn-danger" (click)="alert1='alert-danger'"><i class="bi bi-exclamation-octagon"></i> false</button>
+    </div>
+  </div>
+  <div class="row mt-5">
+    <div class="col-12">
+
+      <h3 [ngClass]="{'text-danger':properties, 'text-info':!properties}">
+        hellow world
+      </h3>
+      <button class="btn" [ngClass]="{'btn-danger':properties, 'btn-info':!properties}" (click)="properties=!properties">
+        change
       </button>
     </div>
   </div>
